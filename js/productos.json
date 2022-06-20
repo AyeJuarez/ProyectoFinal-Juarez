@@ -1,0 +1,45 @@
+
+[
+    {
+        "id": "1",
+        "nombre": "Mega Cuarto",
+        "precio": 1200,
+        "img": "../images/mega-cuarto.jpg",
+        "stock": 100            
+    },
+    {
+        "id": "2",
+        "nombre": "Mega Cuarto Doble",
+        "precio": 1500,
+        "img":"../images/mega-cuarto-doble.jpg",
+        "stock": 100
+    },
+    {
+        "id": "3",
+        "nombre":"Mega Cuarto Completo",
+        "precio": 1700,
+        "img":"../images/mega-cuarto-completo.jpg",
+        "stock": 100
+    },
+    {
+        "id": "4",
+        "nombre":"Mega Cuarto Bacon",
+        "precio": 1800,
+        "img":"../images/mega-cuarto-bacon.jpg",
+        "stock": 100
+    },
+    {
+        "id": "5",
+        "nombre":"Mega Boom Doble",
+        "precio": 2800,
+        "img":"../images/mega-boom-doble.jpg",
+        "stock": 100
+    },
+    {
+        "id": "6",
+        "nombre":"Mega Bacon Doble",
+        "precio": 2500,
+        "img":"../images/mega-bacon-doble.jpg",
+        "stock": 100
+    }
+]

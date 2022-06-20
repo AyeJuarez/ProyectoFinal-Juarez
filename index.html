@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Proyecto Final-Juarez</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Nav-->
+    <nav class="botonCarrito">
+        <!-- Carrito-->
+        <form>
+            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="bi-cart-fill me-1"></i>
+                Carrito
+            </button>
+        </form>
+    </nav>
+    <div class="offcanvas offcanvas-start-lg" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title" id="offcanvasExampleLabel">Pedido</h4>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Producto:</th>
+                            <th scope="col">Cantidad:</th>
+                            <th scope="col">Nombre:</th>
+                            <th scope="col">Precio:</th>
+                            <th scope="col">Subtotal:</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaCarrito">
+
+                    </tbody>
+                </table>
+                <h4>Total:</h4>
+                <div id="totalCarrito">
+
+                </div>
+            </div>
+            <button class="btn btn-outline-dark" id="pagar">Pagar con MercadoPago</button>
+            <button class="btn btn-outline-dark" id="botonFinalizar">Pagar en Local</button>
+            <button class="btn btn-outline-dark" id="vaciar">Vaciar Carrito</button>
+        </div>
+    </div>
+    <!-- Header-->
+    <header class="py-5 fondo">
+        <div class="container px-4 px-lg-5 my-5">
+        </div>
+    </header>
+
+    <!--Section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div id="divProductos"
+                class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            </div>
+        </div>
+    </section>
+    <aside class="d-flex justify-content-center" id="card">
+        <div class="card" style="width: 18rem; margin-top: 25px; background-color: rgba(128, 128, 128, 0.493);">
+            <img src="./images/ubicacion.jpg" class="card-img-top" alt="imagen de google maps">
+            <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">Contactanos</h5>
+                <p class="card-text">Podes encontrarnos en nuestro local a la calle.</p>
+                <a class="btn btn-primary">Te esperamos</a>
+            </div>
+        </div>
+        <div class="card"
+            style="width: 18rem; margin-top: 25px; margin-left: 100px; background-color: rgba(128, 128, 128, 0.493);">
+            <img src="./images/pagaencuotas.jpg" class="card-img-top" ; alt="imagen de mercadopago">
+            <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">Aceptamos Mercadopago</h5>
+                <p class="card-text">Abona en cuotas sin interés con Mercagopago.</p>
+            </div>
+        </div>
+    </aside>
+    <div class="wp">
+        <!-- Logo de Whatsapp para poder consultar directamente con el numero de contacto -->
+        <a href="https://wa.me/+5491136596668/?text=Hola, queria realizar una consulta">
+            <img src="/images/WhatsApp.svg.png" width="70px" height="70px" alt="logo de whatsapp" />
+        </a>
+    </div>
+    <!-- Footer-->
+    <footer class="barra">
+        <div class="container-footer">
+            <h4 class="text-center text-white">Coderhouse 2022 &copy; Ayelen Juarez ~ JavaScript</h4>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/eventos.js"></script>
+</body>
+
+</html>
